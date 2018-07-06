@@ -1,6 +1,6 @@
 $( document ).ready(function() {
         $('.btn-3d').click(function() {
-        	location.href="/3dtour";
+        	location.href="./3dtour";
         });
 
         $('#t-btn-video').click(function() {
