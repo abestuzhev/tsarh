@@ -1,0 +1,94 @@
+.t-year-head {
+	font-size: 25px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+	min-height: 36px;
+
+}
+
+
+.t-grid-pad {
+	padding-top: 42px;
+}
+
+.t-grid-header-2 {
+	width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    min-height: 65px;
+}
+
+.t-modal {
+
+	padding: 0px;
+	min-width: 1065px;
+	max-width: 1065px;
+}
+
+.t-modal-header {
+	width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+
+    background-color: #1a1a1a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    min-height: 65px;
+}
+
+.t-modal-body-1 {
+	padding-top:20px;
+	padding-left: 50px;
+	padding-bottom: 30px;
+}
+
+.t-modal-body-1 p {
+	font-size: 18px;
+	margin: 0px;
+}
+
+.t-tight {
+	padding-left: 15px;
+}
+
+.t-pull-right {
+	text-align: right;
+}
+
+.t-icon-3d {
+	float: left;
+	padding: 0px;
+	width: 40px;
+	padding-right: 10px;
+}
+
+.t-right-pad-2 {
+	padding-left: 18px;
+	padding-right: 30px;
+	padding-top: 28px;
+	padding-bottom: 30px;
+}
+
+
+#t-btn-video {
+	cursor: pointer;
+}
+
+.btn-3d {
+	min-width: 523px;
+	cursor: pointer;
+}
+
+.btn-video {
+	min-width: 523px;
+	cursor: pointer;
+}
+
