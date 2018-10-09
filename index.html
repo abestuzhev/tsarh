@@ -1,448 +1,107 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html lang="ru">
 <head>
-
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700,400&subset=cyrillic,latin"
-          type="text/css"/>
-
-
-    <title>Выполненные проекты - Трансстрой</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="robots" content="index, follow" />
-<meta name="description" content="Совершенствование строительного менеджмента, жесткая производственная дисциплина, слаженность и профессионализм коллектива компании, высокий уровень" />
-<link href="./old/page.css" type="text/css" rel="stylesheet" />
-<link href="./old/template.css" type="text/css" data-template-style="true" rel="stylesheet" />
-
-<link href="./new/style.css?v=4" type="text/css" data-template-style="true" rel="stylesheet" />
-
-<script type="text/javascript"  src="./old/template.js"></script>
-
-<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "481699f835df70ba5a4b58c0d7cfc012"]); _ba.push(["host", "www.ts-arh.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-
-
-    
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список страниц"</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/addition.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="archive category category-jobs category-9">
-<div id="panel">
-    </div>
-<header>
-    <div class="uk-container uk-container-center">
-        <nav class="uk-navbar uk-flex">
-            <a class="uk-navbar-brand" href="/">
-                <img src="./bitrix/templates/tsarh/img/logo.svg" class="logo">            </a>
-            <div class="uk-navbar-content uk-navbar-center uk-visible-large">
-                
-<ul id="menu-main-menu" class="uk-navbar-nav uk-flex uk-flex-space-between">
+<style>
+    html { min-height: 100%; }
 
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item"><a href="/jobs/" title="Выполненные проекты">Выполненные проекты</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/services/" title="Услуги">Услуги</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/technics/" title="Список техники">Список техники</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/svidetelstva/" title="Документы">Документы</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/contacts/" title="Контакты">Контакты</a></li>
-		
+    body {
+        color: #292929;
+        padding: 0;
+        margin: 0;
+        min-height: 100%;
+        background: url('img/bg.jpg') repeat 0 0;
+        background-size: cover;
+        font: 16px/32px 'Roboto', sans-serif;
+    }
 
-</ul>
-            </div>
-            <div class="uk-button-offcanvas uk-float-right uk-hidden-large uk-flex uk-flex-center uk-flex-middle hamburger-tab uk-navbar-flip">
-                <a href="#menu" data-uk-offcanvas="" class="uk-icon-navicon uk-icon-small"></a>
-            </div>
-            <div class="uk-navbar-flip">
-                <a class="phone" href="tel:+7 (8182) 42-19-20">+7 (8182) 42-19-20</a>
-            </div>
+    h1 {
+        color: #292929;
+        margin: 0 0 20px;
+        padding-bottom: 10px;
+        font-size: 28px;
+        border-bottom: 1px solid #292929;
+        font-weight: 700;
+        font-family: Roboto, Arial, sans-serif;
+    }
 
-        </nav>
-    </div>
-</header>
+    ol {
+        padding: 0;
+        list-style-position: inside;
+    }
 
+    .item {
+      position: relative;
+      padding-left: 25px;
+      color: #292929;
+      font-size: 1em;
+        margin: 0;
+    }
 
-<div id="menu" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-        
-<ul id="menu-main-menu" class="uk-nav uk-nav-offcanvas">
+    .corrected::before {
+      content: '⌘';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #292929;
+    }
 
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item uk-active uk-open"><a href="/jobs/" title="Выполненные проекты">Выполненные проекты</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/services/" title="Услуги">Услуги</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/technics/" title="Список техники">Список техники</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/svidetelstva/" title="Документы">Документы</a></li>
-		
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="/contacts/" title="Контакты">Контакты</a></li>
-		
+    .disable {
+      opacity: .6;
+      cursor: default;
+    }
 
-</ul>
-    </div>
-</div>
+    .disable:hover {
+      color: #292929;
+      opacity: .6;
+      text-decoration: none;
+    }
 
 
+    section {
+        margin: 50px auto;
+        max-width: 500px;
+        /*background: rgba(255, 255, 255, .3);*/
+        background-color: #fff;
+        padding: 40px 60px;
+        /*padding-left: 0;*/
+        border-radius: 6px;
+    }
 
-    <script src="./bitrix/templates/tsarh/js/packery.pkgd.min.js"></script>
-    <main>
-        <div class="uk-container uk-container-center">
-            <div class="content">
-                <h1>Выполненные проекты</h1>
-<div class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-2">
-    <div>
-        <p>Многопрофильная специализация позволяет компании «ТрансСтрой» реализовывать комплексные проекты, 
-которые включают в себя несколько видов инфраструктурного строительства, принципиально различных по технологии и специалистам,
-организациям работ и применяемой технике.</p>
-    </div>
-</div>            </div>
-            
-    <div class="uk-dinamic-grid t-grid-pad">
-        <div class="t-year-head">2018 ГОД</div>
+    a {
+        text-decoration: none;
+        color: #292929;
+        font-weight: 500;
+    }
 
-        <div class="uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid="{gutter:15}">
-            <div class="btn-3d">
-                <div class="t-grid-header-2">
-                    <div class="t-icon-3d"><img width="39" height="60" src="./new/img/icon3d.png" alt=""></div>
-                    <div>КОМПЛЕКС РАБОТ НА ГОРНО-ОБОГАТИТЕЛЬНОМ КОМБИНАТЕ РАСПОЛОЖЕННОМ НА МЕСТОРОЖДЕНИИ АЛМАЗОВ ИМ. М.В. ЛОМОНОСОВА</div>
-                </div>
-                <img width="100%" height="377" src="./new/img/block3d.jpg" alt="">
-            </div>
-            <div class="btn-video">
-                <a href="#modal1" data-uk-modal="{center:true}"><img width="100%" height="286" src="./new/img/block_video.jpg" alt=""></a>
-                <div id="t-btn-video" class="t-grid-header-2 t-right-pad-2">ЦЕНТР СТРОИТЕЛЬСТВА КРУПНОТОННАЖНЫХ МОРСКИХ СООРУЖЕНИЙ (ЦСКМС). РАБОТЫ ПО ВЕРТИКАЛЬНОЙ ПЛАНИРОВКЕ БЕРЕГОВОЙ ТЕРРИТОРИИ С ИЗМЕНЕНИЕМ РЕЛЬЕФА СКЛОНОВ В ЦЕЛЯХ ПОВЫШЕНИЯ ИХ УСТОЙЧИВОСТИ И ПОСЛОЙНАЯ РАЗРАБОТКА СКАЛЬНОГО ГРУНТА.</div>
-                
+    a:hover { color: #fec111; text-decoration: underline;}
+</style>
+</head>
 
-                <div id="modal1" class="uk-modal">
-                    <div class="uk-modal-dialog uk-modal-dialog-large t-modal">
-                        
-                            <div class="t-modal-header">
-                                <div class="uk-grid">
-                                    <div class="uk-width-9-10">Центр  строительства крупнотоннажных морских сооружений (ЦСКМС). Работы по вертикальной  планировке береговой территории с изменением рельефа склонов в целях повышения их устойчивости и послойная разработка скального грунта.</div>
-                                    <div class="uk-width-1-10 t-pull-right"><a class="uk-modal-close"><img width="17" height="17" src="./new/img/icon_close.png" alt=""></a></div>
-                                </div>
-                            </div>
+<body>
 
-                            <div class="uk-grid">
-                                <div class="uk-width-4-10 t-modal-body-1">
-<p>с. Белокаменка, Мурманская область</p>
-<p>Заказчик:  ООО «Новатэк-Мурманск»</p>
-<p>2017-2018 гг.</p>
-<p>&nbsp;</p>
-<p>Работы по вертикальной  планировке береговой территории с изменением рельефа склонов в целях повышения их устойчивости и послойная разработка скального грунта уступами до 15 м.</p>
-<p>Общий объём выемки грунта более 12 000 000 м3.</p>
-<p>Разработка и транспортировка грунта до 8000 м3 в сутки.</p>
-<p>&nbsp;</p>
-<p>Задействованные машины и механизмы:</p>
-<p>Шарнирно-сочлененные самосвалы Volvo и Terex;</p>
-<p>Карьерные самосвалы Scania и Tatra;</p>
-<p>Экскаваторы Volvo и Cat оснащённые скальными ковшами;</p>
-<p>Бульдозеры Cat;</p>
-<p>Дробильная установка Sandvik.</p>
-<p>До 60 метров - перепад высот при выемке грунта.</p>
-<p>Береговые участки имеют сложную скальную поверхность с резко изрезанным профилем.</p>
-<p>Условиям района строительства ЦСКМС - это субарктическая зона европейской части РФ.</p>
+<section>
 
+    <h1>Трансстрой</h1>
 
-                                </div>
-                                <div class="uk-width-6-10 t-pull-right" id="video-block">
-                                    <iframe id="video1" width="625" height="356" src="https://www.youtube.com/embed/81pkgxTYlk8?rel=0&amp;showinfo=0&amp;start=3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                                    
-                                </div>
-                            </div>
+    <ol>
+        <li class="item"><a href="home.html">Главная</a></li>
+        <li class="item"><a href="services-list.html">Услуги</a></li>
+        <li class="item"><a href="services.html">Услуги-подробнее</a></li>
+    </ol>
+  <!--<a href="components.html">Компоненты</a>-->
+</section>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                
-
-        <div class="t-year-head t-year-between t-grid-pad">2017 ГОД</div>
-
-        <div class="uk-grid-din">
-                
-                <div class="uk-grid-din-item">
-                    <div class="uk-panel-header">Очистка архипелага земля франца&nbsp;-&nbsp;иосифа</div>
-                    <img width="338" height="250" src="http://www.ts-arh.ru/upload/iblock/a9b/a9bfef9f26be6473cc9e623e5af74fde.jpg" class=" wp-post-image" alt="" sizes="(max-width: 338px) 100vw, 338px">
-                    <div id="1" class="job uk-width-1-1 hidden" data-uk-observe data-uk-check-display>
-                        <div class="uk-panel" data-uk-grid-match data-uk-check-display>
-                            <div class="uk-panel-description">
-                                <div class="uk-panel-header">
-                                    Комплекс работ по очистке архипелага земля франца – иосифа от промышленных отходов                                </div>
-                                <div class="uk-panel-body">
-                                    <p>ЗАКАЗЧИК: ЗАО «АКС»</p>
-                                    <p>2012–2017 гг.</p>
-                                    <p>&nbsp;</p>
-                                    <p>Объем вывезенных промышленных отходов: 40000 тонн</p>
-                                    <p>Площадь рекультивированной территории: 340 га</p>
-                                </div>
-                            </div>
-                            <div class="uk-panel-gallery">
-                                <div id="slide1" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}" data-uk-check-display>
-                                    <ul class="uk-slideshow">
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/b86/b86673af06c64d13fc9ee5746a225e88.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/9f1/9f1ab8d363f2c54b754ab7372517f1d7.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/2f3/2f300418466613cd8eec7679bf59ab14.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_01.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_02.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_03.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_04.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_05.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_06.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_01/sl_01_07.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                    </ul>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-grid-din-item">
-                    <div class="uk-panel-header">УСТРОЙСТВО ГРУЗОВЫХ ПЛОЩАДОК</div>
-                    <img width="338" height="250" src="./new/img/block_02.jpg" class=" wp-post-image" alt="" sizes="(max-width: 338px) 100vw, 338px">
-                    <div id="2" class="job uk-width-1-1 hidden" data-uk-observe data-uk-check-display>
-                        <div class="uk-panel" data-uk-grid-match data-uk-check-display>
-                            <div class="uk-panel-description">
-                                <div class="uk-panel-header">Устройство грузовых площадок в районе причала №118 и в районе ул.Дрейера 66, стр.1 согласно Технического задания</div>
-                                <div class="uk-panel-body">
-                                    <p>Заказчик: ООО «МРТС-Строймонтаж»</p>
-                                    <p>&nbsp;</p>
-                                    <p>Объём отсыпки площадок щебня – 67855 м<sup>2</sup></p>
-                                    <p>Устройство основания из геотекстиля -67855 м<sup>2</sup></p>
-                                </div>
-                            </div>
-                            <div class="uk-panel-gallery">
-                                <div id="slide2" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}" data-uk-check-display>
-                                    <ul class="uk-slideshow">
-                                        <li><img src="./new/img/sl_02/sl_02_01.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_02/sl_02_02.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_02/sl_02_03.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_02/sl_02_04.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="./new/img/sl_02/sl_02_05.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                    </ul>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
-
-                <div class="uk-grid-din-item">
-                    <div class="uk-panel-header">Транспортировка техники</div>
-                    <img width="338" height="250" src="http://www.ts-arh.ru/upload/iblock/1a1/1a14836694def607760d60c18698d18a.jpg" class=" wp-post-image" alt="" sizes="(max-width: 338px) 100vw, 338px">
-                    <div id="3" class="job uk-width-1-1 hidden" data-uk-observe data-uk-check-display>
-                        <div class="uk-panel" data-uk-grid-match data-uk-check-display>
-                            <div class="uk-panel-description">
-                                <div class="uk-panel-header">Транспортировка техники</div>
-                                <div class="uk-panel-body"><p>Транспортировка техники морским, автомобильным и железнодорожным транспортом</p></div>
-                            </div>
-                            <div class="uk-panel-gallery">
-                                <div id="slide3" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}" data-uk-check-display>
-                                    <ul class="uk-slideshow">
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/054/054e55bbf2a2404bcc55f042a3c24923.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/d66/d66b2efac5fef28cd0b91ac53118511b.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                    </ul>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="uk-grid-din-item">
-                    <div class="uk-panel-header">РАЗРАБОТКА, ДРОБЛЕНИЕ, СОРТИРОВКА,&nbsp;РЕКУЛЬТИВАЦИЯ<br/>НА&nbsp;МЕСТОРОЖДЕНИИ</div>
-                    <img width="338" height="250" src="./new/img/block_04.jpg" class=" wp-post-image" alt="" sizes="(max-width: 338px) 100vw, 338px">
-                    <div id="4" class="job uk-width-1-1 hidden" data-uk-observe data-uk-check-display>
-                        <div class="uk-panel" data-uk-grid-match data-uk-check-display>
-                            <div class="uk-panel-description">
-                                <div class="uk-panel-header">Выполнение работ по разработке, дроблению, сортировке и рекультивации на месторождении гравийно-песчаного материала «Падун»</div>
-                                <div class="uk-panel-body">
-                                    <p>2014-2015 гг.</p>
-                                    <p>&nbsp;</p>
-                                    <p>Корчевка пней на площади 31,5581 га с последующим их сжигание во вне пожароопасный период</p>
-                                    <p>Вскрышные работы с удалением вскрыши на площади 31,5581 га</p>
-                                    <p>Дробление и сортировка гравийно-песчаного материала до фракции 40-70 мм и 20-40 мм</p>
-                                    <p>Объёмы добываемого ГПМ:</p>
-                                    <p>2014 год: 450 000 м<sup>3</sup></p>
-                                    <p>2015 год: 193 022 м<sup>3</sup></p>
-                                    <p>Техническая и биологическая рекультивация на площади 42,1681 га</p>
-                                </div>
-                            </div>
-                            <div class="uk-panel-gallery">
-                                <div id="slide4" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}" data-uk-check-display>
-                                    <ul class="uk-slideshow">
-                                        <li><img src="./new/img/sl_04/sl_04_01.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                    </ul>
-                                    <!-- <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="uk-grid-din-item">
-                    <div class="uk-panel-header">Разработка котлована</div>
-                    <img width="338" height="250" src="http://www.ts-arh.ru/upload/iblock/1fa/1fa8c310c8e24dc67ead07975e283152.jpg" class=" wp-post-image" alt="" sizes="(max-width: 338px) 100vw, 338px">
-                    <div id="5" class="job uk-width-1-1 hidden" data-uk-observe data-uk-check-display>
-                        <div class="uk-panel" data-uk-grid-match data-uk-check-display>
-                            <div class="uk-panel-description">
-                                <div class="uk-panel-header">Разработка котлована с обратной засыпкой песком для ТРК «ТИТАН-АРЕНА»</div>
-                                <div class="uk-panel-body">
-                                    <p><span>ЗАКАЗЧИК: </span>ООО «Титан-Девелопмент»</p>
-                                    <p>2012 г.</p>
-                                    <p>&nbsp;</p>
-                                    <p>Выемка грунта с перевозкой и утилизацией: 75000 м<sup>3</sup></p>
-                                    <p>Обратная засыпка песком с уплотнением до коэффициента: 0,95 – 30000 м<sup>3</sup></p>
-                                    <p>Устройство дренажного водоотведения: 400 м.п.</p>
-                                    <p>Срок выполнения работ: 3 месяца</p>     
-                                </div>
-                            </div>
-                            <div class="uk-panel-gallery">
-                                <div id="slide8" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}" data-uk-check-display>
-                                    <ul class="uk-slideshow">
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/cce/cce93e7cbc8446cb30509777c64ce3bc.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/95b/95b6e17adc09f6ab6dff0baca3458a31.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/380/38064612a909c926ce60d7f9c9c8eb69.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/20a/20aef2cd23994c13d6f19fdcdae8688e.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                    </ul>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="uk-grid-din-item">
-                    <div class="uk-panel-header">Строительство лесовозной магистрали</div>
-                    <img width="338" height="250" src="http://www.ts-arh.ru/upload/iblock/aac/aacdf2de3bcef8cf1fd7325600c59cb7.jpg" class=" wp-post-image" alt="" sizes="(max-width: 338px) 100vw, 338px">
-                    <div id="6" class="job uk-width-1-1 hidden" data-uk-observe data-uk-check-display>
-                        <div class="uk-panel" data-uk-grid-match data-uk-check-display>
-                            <div class="uk-panel-description">
-                                <div class="uk-panel-header">
-                                    Строительство лесовозной магистрали ЛПХ «Борецкий»                                
-                                </div>
-                                <div class="uk-panel-body">
-                                    <p><span>ЗАКАЗЧИК: </span>ОАО «Соломбальский ЦБК»</p>
-                                    <p>2011 г.</p>
-                                    <p>&nbsp;</p>
-                                    <p>Площадь планировки: 60000 м<sup>2 </sup></p>
-                                    <p>Объём отсыпки: 48000 м<sup>3 </sup></p>
-                                    <p>Срок выполнения работ: 2 месяца</p>                                
-                                </div>
-                            </div>
-                            <div class="uk-panel-gallery">
-
-                                <div id="slide6" class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}" data-uk-check-display>
-                                    <ul class="uk-slideshow">
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/2dd/2dd7e82d891cc4badeb1c00b493f218a.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                        <li><img src="http://www.ts-arh.ru/upload/iblock/a06/a06b3486f1c091094fa2d829dfe52093.jpg" class="my-custom-class" alt="Gallery image"/></li>
-                                    </ul>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
-                                       data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next"
-                                       data-uk-slideshow-item="next"></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-    </div>
-        </div>
-    </main>
-    <script>
-        var myUIkit = UIkit.noConflict();
-        var grid = document.querySelector('.uk-grid-din');
-
-        var pckry = new Packery(grid, {
-            itemSelector: '.uk-grid-din-item'
-        });
-
-        grid.addEventListener('click', function (event) {
-            if (event.target.classList.contains('uk-grid-din-item') || event.target.classList.contains('uk-panel-gallery') || event.target.classList.contains('uk-slidenav') || event.target.classList.contains('uk-panel-description')) {
-                return;
-            }
-            $('.uk-grid-din').find('.uk-grid-din-item-full').removeClass('uk-grid-din-item-full');
-            $(event.target).parent().toggleClass('uk-grid-din-item-full');
-            pckry.layout();
-            $.UIkit.trigger('domready.uk.dom')
-        });
-
-        $(window).load(function () {
-            pckry.layout();
-            $.UIkit.trigger('domready.uk.dom')
-        });
-
-    </script>
-
-    <script type="text/javascript" src="./new/jobs.js"></script>
-
-
-
-<footer>
-    <div class="uk-container uk-container-center">
-        <nav class="uk-navbar">
-            <a class="uk-navbar-brand uk-flex" href="/">
-                <img src="./bitrix/templates/tsarh/img/logo.svg" class="logo">            </a>
-            <div class="">
-                
-<ul id="menu-main-menu-2" class="uk-navbar-nav uk-navbar-nav-vertical">
-
-			<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item uk-active"<a href="/jobs/" title="Выполненные проекты">Выполненные проекты</a></li>
-		
-			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="/services/" title="Услуги">Услуги</a></li>
-		
-			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="/technics/" title="Список техники">Список техники</a></li>
-		
-			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="/svidetelstva/" title="Документы">Документы</a></li>
-		
-			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="/contacts/" title="Контакты">Контакты</a></li>
-		
-
-</ul>
-            </div>
-            <div class="uk-navbar-flip uk-navbar-social">
-                Мы в соц сетях:
-                <a href="https://www.instagram.com/ts_arh/" target="_blank"><i class="uk-icon-instagram uk-icon-small"></i></a>
-            </div>
-            <div class="liveinternet"
-            <!--LiveInternet counter--><script type="text/javascript"><!--
-                document.write("<a href='//www.liveinternet.ru/click' "+
-                    "target=_blank><img src='//counter.yadro.ru/hit?t17.6;r"+
-                    escape(document.referrer)+((typeof(screen)=="undefined")?"":
-                        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-                        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-                    ";"+Math.random()+
-                    "' alt='' title='LiveInternet: показано число просмотров за 24"+
-                    " часа, посетителей за 24 часа и за сегодня' "+
-                    "border='0' width='88' height='31'><\/a>")
-                //--></script><!--/LiveInternet-->
-    </div>
-    </nav>
-    </div>
-</footer>
 </body>
 </html>
